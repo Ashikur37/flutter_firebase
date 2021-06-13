@@ -84,14 +84,14 @@ packages:
       name: firebase_core
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.5"
+    version: "0.4.4"
   firebase_core_platform_interface:
     dependency: transitive
     description:
       name: firebase_core_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.4"
+    version: "1.0.0"
   firebase_core_web:
     dependency: transitive
     description:
@@ -114,6 +114,27 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  google_sign_in:
+    dependency: "direct main"
+    description:
+      name: google_sign_in
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.4"
+  google_sign_in_platform_interface:
+    dependency: transitive
+    description:
+      name: google_sign_in_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.1"
+  google_sign_in_web:
+    dependency: transitive
+    description:
+      name: google_sign_in_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.10.0"
   http:
     dependency: transitive
     description:
@@ -170,13 +191,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.11.0"
-  plugin_platform_interface:
-    dependency: transitive
-    description:
-      name: plugin_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.3"
   provider:
     dependency: "direct main"
     description:
@@ -190,7 +204,14 @@ packages:
       name: quiver
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.5"
+    version: "3.0.1"
+  quiver_hashcode:
+    dependency: transitive
+    description:
+      name: quiver_hashcode
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -254,4 +275,4 @@ packages:
     version: "2.1.0"
 sdks:
   dart: ">=2.12.0 <3.0.0"
-  flutter: ">=1.16.0"
+  flutter: ">=1.20.0"

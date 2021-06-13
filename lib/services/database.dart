@@ -5,14 +5,16 @@ class DatabaseService {
 
   DatabaseService(this.uid);
 
-  final CollectionReference taskCollection =
-      Firestore.instance.collection('tasks');
+  final CollectionReference userCollection =
+      Firestore.instance.collection('users');
 
-  Future updateUserData(String name, String asignee, int type) async {
-    return await taskCollection.document(uid).setData({
+  Future updateUserData(
+      String name, String father_name, String mother_name, String nid) async {
+    return await userCollection.document(uid).setData({
       'name': name,
-      'asignee': asignee,
-      'type': type,
+      'father_name': father_name,
+      'mother_name': mother_name,
+      'nid': nid
     });
   }
 }

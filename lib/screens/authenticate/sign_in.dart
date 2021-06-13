@@ -63,7 +63,7 @@ class _SignInState extends State<SignIn> {
                 TextButton(
                   onPressed: () async {
                     if (_formKey.currentState.validate()) {
-                      AuthService().signinWithEmail(email, password);
+                      var res = AuthService().signinWithEmail(email, password);
                     }
                   },
                   child: Text(
